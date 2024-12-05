@@ -1,0 +1,22 @@
+﻿@model List<ProductViewModel>
+<h1>All Products Info </h1>
+<hr />
+<table class="table">
+    <thead>
+        <tr>
+            <th> Name </th>
+            <th> Price </th>
+            <th> Quantity </th
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td scope="col">@item.Name</td>
+                <td scope="col">@item.Price</td>
+                <td scope="col">@item.Quantity</td>
+            </tr>
+        }
+    </tbody>
+</table>
